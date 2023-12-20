@@ -38,8 +38,10 @@ Gem::Specification.new do |s|
     s.add_development_dependency 'rails', '>= 4.2', '< 5.0.0'
   when 'rails5'
     s.add_development_dependency 'rails', '>= 5', '< 6.0.0'
-  else #default to rails 6 - keep in sync with `rails_version` in spec_helper
+  when 'rails6'
     s.add_development_dependency 'rails', '>= 6', '< 7.0.0'
+  else #default to rails 7 - keep in sync with `rails_version` in spec_helper
+    s.add_development_dependency 'rails', '>= 7', '< 8.0.0'
   end
 
   s.add_development_dependency 'rack-test'
